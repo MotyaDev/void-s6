@@ -14,6 +14,8 @@ entry).
 
 ### Boot and shutdown
 
+add to path with `sudo echo 'export PATH="/etc/s6-linux-init/current/bin:$PATH"' > /etc/profile.d/s6.sh`
+
 * Boot with kernel parameter: `init=/etc/s6-linux-init/current/bin/init`
 
 Note: mistyping this into a nonexisting path still makes the system boot via
